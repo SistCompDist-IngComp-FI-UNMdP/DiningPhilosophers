@@ -9,7 +9,7 @@ public abstract class FillerArrayPhilosopher{
 	static {
 		FILLERS = new ArrayList<>();
 		
-		//FILLERS.add( new FillerArrayAutonomusPhilosopher() ); // Deadlock
+		FILLERS.add( new FillerArrayAutonomusPhilosopher() ); // Deadlock
 		FILLERS.add( new FillerArrayBothPickerAtATimePhilosopher() );
 		FILLERS.add( new FillerArrayCoordinateNeighborPickerPhilosopher() );
 		FILLERS.add( new FillerArrayOrganizedPhilosopher() );
